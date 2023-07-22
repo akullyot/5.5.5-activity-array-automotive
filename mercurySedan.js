@@ -54,8 +54,9 @@ class Car extends VehicleModule.Vehicle
             return this.started = false;
         }
     }
-
 }
+
+
 
 let A28Sedan = new Car("Mercury", 'Sedan', '2005', 'white', 8000 );
 
@@ -76,21 +77,23 @@ A28Sedan.loadPassenger(3);
 console.log(A28Sedan);
 
 
+let grandCherokee = new Car("Jeep", 'Grand Cherokee', '1996', 'red', 2000 );
+
+
+grandCherokee.start();
+grandCherokee.loadPassenger(3);
+grandCherokee.stop();
+grandCherokee.checkService();
+
+
+console.log(grandCherokee);
+
+grandCherokee.accelerate();
+grandCherokee.start();
+grandCherokee.accelerate();
+grandCherokee.loadPassenger(1);
+
+console.log(grandCherokee);
 
 
 
-
-
-
-
-
-
-//TO DO: Creating Instances and Testing Them
-
-//You can use the same instance "v" of the Vehicle class above for the base class.
-
-
-
-
-
-//Create at least two new instances of the Car class and test them here:
